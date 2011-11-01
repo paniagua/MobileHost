@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MobileServerAndroidActivity!</string>
+    <string name="app_name">MobileServerAndroid</string>
+    <string name="choosefile_title">Find File to Share"</string>
+    <!--  <string name="manage_button">Manage Shared Content</string>
+    <string name="addfile_button">Add File to Shared Folder</string>
+    
+    <string name="empty_directory">Empty</string>
+    -->
+    <string name="port">Port:9999</string>
+    <string name="create">New</string>
+    <string name="delete">Delete</string>
+    <!-- 
+    <string name="foldername_prefix">Folder:</string>
+    <string name="foldersize_prefix">Number of Files:</string>
+    <string name="delete_ok_button">Delete</string>
+    <string name="delete_cancel_button">Cancel</string>
+    
+    <string name="create_ok_button">Create</string>
+    <string name="create_cancel_button">Cancel</string>
+    -->
+    <string name="service_button_on">Web Service On</string>
+    <string name="service_button_off">Web Service Off</string>
+    <string name="edit">Edit</string>
+    <string name="ipaddress_prefix">IP Address:</string>
+    <string name="port_prefix">Port:</string>
+    <string name="url_prefix">URL:</string>
+    <string name="unknown_ipaddress">Unknown</string>
+    <string name="help_button">Help</string>
+    <string name="share_all">Share All</string>
+    <string name="error_title">Error</string>
+    <string name="error_creating_folder">Problem Creating Shared Folder</string>
+    <!--  <string name="help_content"><b>How do I share files?</b>\nSelect "Share a File" from the menu.
+    Select a file to share, then select the shared folder.\n\n<b>How do my friends access my shared files?</b>\nTell them to go to http://youripaddress:9999
+    \n\n<b>What is my IP Address?</b>\nYou\'ll have to find that out by investigating your wireless settings.\n\n
+    <b>How do I turn off/on the service?</b>\nThe sharing service is automatically started when the File Share application is
+    first started. The ability to turn on/off the service will be available in a future release.</string>
+    -->
+<string name="share_url">Share URL</string>
+<string name="shareurl_title">Share</string>
+<string name="preferences_button">Preferences</string>
+
+<string name="whats_new">* Toggle Web Service\n* Order files alphabetically\n</string>
+<string name="whats_new_title">What\'s New</string>
+<string name="set_password_title">Set Password</string>
+    
+    
+</resources>

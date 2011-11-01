@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="/home/carlos/Downloads/commons-fileupload-1.2.2/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/root/workspaceMobileHost/MobileServerAndroid/lib/190b20090708/felix.jar"/>
+	<classpathentry kind="lib" path="/root/workspaceMobileHost/MobileSroidService/dist/mobilesroidservice.jar"/>
+	<classpathentry kind="lib" path="/root/workspaceAndroid/AndroidDnssdDiscoveryEclipse/jmdns.jar"/>
+	<classpathentry kind="lib" path="/root/workspaceMobileHost/MobileServerAndroid/lib/packagescanner078.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

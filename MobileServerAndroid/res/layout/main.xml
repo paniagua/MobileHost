@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:layout_marginTop="20px">
+
+	<Button android:id="@+id/preferences" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/preferences_button">
+	</Button>
+
+	<ToggleButton android:id="@+id/service"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textOn="@string/service_button_on" android:textOff="@string/service_button_off">
+	</ToggleButton>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="20px" android:layout_marginLeft="10px">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/url_prefix" />
+
+		<TextView android:id="@+id/url" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10px" />
+
+
+
+
+	</LinearLayout>
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_height="150px" android:layout_width="fill_parent">
+		<TextView android:id="@+id/services" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10px" />
+	</ScrollView>
+</LinearLayout>

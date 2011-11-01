@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ut.ee.mh" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+
+		<activity android:name=".Sroid" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".FelixEmbedAndStarter" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MobileServerAndroidActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="SharedFolderBrowser" android:label="Folder Browser">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="android.intent.action.PICK" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.navjagpal.sharedfolder" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.navjagpal.sharedfolder" />
+			</intent-filter>
+		</activity>
+		<activity android:name="SharedFileBrowser" android:label="File Browser">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="android.intent.action.VIEW" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.navjagpal.sharedfolder" />
+			</intent-filter>
+		</activity>
+		<provider android:name="FileProvider"
+			android:authorities="com.navjagpal.filesharer.FileProvider"
+			android:exported="true" />
+
+		<provider android:name="FileSharingProvider"
+			android:authorities="com.navjagpal.filesharer.FileSharingProvider"
+			android:exported="true" />
+
+		<provider android:name="SroidServerService"
+			android:authorities="com.navjagpal.filesharer.FileSharingProvider"
+			android:exported="true" />
+
+		<service android:enabled="true" android:permission="android.permission.INTERNET"
+			android:name="SroidServerService" android:exported="true">
+			<intent-filter>
+				<action android:name="ut.ee.mh.IFileSharingService" />
+			</intent-filter>
+		</service>
+	</application>
+
+</manifest>
